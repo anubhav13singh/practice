@@ -8,7 +8,7 @@ constructor(props){
         year: 20
     };
 }
-change(){
+ change(){
     this.setState({year: 43});
 }
 render(){
