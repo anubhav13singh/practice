@@ -1,6 +1,7 @@
 import './App.css';
  import Person from "./components/Person";
 import Man from './components/Man';
+import State from './components/State';
 function App() {
   return (
     <div className='App-header'>
@@ -14,7 +15,11 @@ function App() {
        
       </div>
       <Person name = "bagirath"></Person>
+      
+      <State/>
+      
     </div>
+   
   );
 }
 
