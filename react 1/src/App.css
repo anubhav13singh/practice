@@ -2,6 +2,16 @@
   background-color: #282c34;
   font-size: calc(10px + 2vmin);
   color: rgb(243, 72, 72);
+  text-align: center;
+}
+button{
+  background-color: azure;
+  border-radius: 10px;
+  padding: 10px 20px;
+  
+}
+.name {
+  border: 5px solid rgb(134, 112, 112);
 }
 
 

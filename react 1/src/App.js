@@ -5,7 +5,7 @@ import State from './components/State';
 function App() {
   return (
     <div className='App-header'>
-      <header >
+      <header className='name'>
         hello everyone ,
         hows d day going on
       </header>
@@ -13,11 +13,11 @@ function App() {
        <Man number = "anubhav"></Man>
        <Man number = "singh"></Man>
        
-      </div>
       <Person name = "bagirath"></Person>
       
       <State/>
       
+     </div> 
     </div>
    
   );
