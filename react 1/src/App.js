@@ -5,6 +5,32 @@ import State from './components/State';
 import {useState} from 'react'
 import React from 'react';
 
+
+function SuperHero(){
+  const [hero, setHero] = useState(["superman", "spiderman", "thor"])
+
+  const [name, setName] = useState( () => "ironman")
+   
+  function addName(){
+    setHero([ ...hero, name])
+    setName("")
+  }
+  return (
+    <>
+    <ul>
+      {hero.map((h) => (
+        <li key={h}>{h}</li>
+      ))}
+    </ul>
+
+    <input type={"text"} value={name} onChange={(e) => setName(e.target.value)}></input>
+    <button onClick={addName}>click to add</button>
+    </>
+  )
+}
+
+
+
 function Increment(){
   let [count, SetCount] = useState(10);
 
@@ -33,13 +59,14 @@ function App() {
         
       </header>
       <div>
-       <Man number = "anubhav"></Man>
        <Man number = "singh"></Man>
       <Person name = "bagirath"></Person>
      <State>  </State>
 
        <Increment/>
        <Increment/>
+
+       <SuperHero/>
       
      </div> 
     </div>

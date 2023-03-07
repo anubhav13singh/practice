@@ -37,9 +37,9 @@ render(){
         <div>
               <i>  dear user he is {this.state.age} year old </i><br/>
              
-                <i>  dear {this .state.person[0].naam} he is {this.state.person[0].age} year old </i><br/>
+                {/* <i>  dear {this .state.person[0].naam} he is {this.state.person[0].age} year old </i><br/>
               <i>  dear {this .state.person[1].naam} he is {this.state.person[1].age} year old </i><br/>
-              <i>  dear {this .state.person[2].naam} he is {this.state.person[2].age} year old </i><br/>  
+              <i>  dear {this .state.person[2].naam} he is {this.state.person[2].age} year old </i><br/>   */}
 
               {/* {person} */}
               <button onClick={this.change.bind(this)}>click it</button>
