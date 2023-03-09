@@ -6,15 +6,22 @@ import {useState} from 'react'
 import React from 'react';
 
 
+
 function SuperHero(){
   const [hero, setHero] = useState(["superman", "spiderman", "thor"])
 
   const [name, setName] = useState( () => "ironman")
+
+  function change(event){
+    setName(event.target.value)
+  }
    
   function addName(){
     setHero([ ...hero, name])
+    // spread oprerator
     setName("")
   }
+
   return (
     <>
     <ul>
@@ -23,11 +30,12 @@ function SuperHero(){
       ))}
     </ul>
 
-    <input type={"text"} value={name} onChange={(e) => setName(e.target.value)}></input>
+    <input type={"text"} value={name} onChange={change}></input>
     <button onClick={addName}>click to add</button>
     </>
   )
 }
+
 
 
 
@@ -51,7 +59,11 @@ function Increment(){
 
 
 
+
 function App() {
+ 
+  let array = ["hitesh","ryan","john"]
+
   return (
     <div className='App-header'>
       <header className='name'>
@@ -59,7 +71,8 @@ function App() {
         
       </header>
       <div>
-       <Man number = "singh"></Man>
+
+       <Man number = "singh" list= {array} ></Man>
       <Person name = "bagirath"></Person>
      <State>  </State>
 
@@ -67,6 +80,8 @@ function App() {
        <Increment/>
 
        <SuperHero/>
+
+      
       
      </div> 
     </div>

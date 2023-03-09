@@ -13,6 +13,7 @@ class Person extends React.Component {
             <div>
                 <div>name: {this.props.name}</div>
                 <div>age: 25</div>
+                
             </div>
         )
     }

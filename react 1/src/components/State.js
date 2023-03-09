@@ -23,7 +23,7 @@ constructor(props){
     }
 }
  change(){
-    this.setState({age: 43});
+    this.setState({age: 32});
     // using arrow function we don't have to use bind as it doesn't rebind
 }
 render(){

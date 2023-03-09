@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import Man from './components/Man';
+
 // import axios from 'axios';
 
 
@@ -10,7 +10,7 @@ root.render(
   <React.StrictMode>
     <App />
     
-    <Man number = "ryan"></Man>
+    
 
     </React.StrictMode>
 );
