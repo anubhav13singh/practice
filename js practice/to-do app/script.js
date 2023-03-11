@@ -10,10 +10,9 @@ function Add(){
     const newli = document.createElement('li');
     const checkbtn = document.createElement('button');
     const dltbtn = document.createElement('button');
-
+    
     checkbtn.innerHTML = '<i class="fa fa-check"></i>';
     dltbtn.innerHTML = '<i class="fa fa-trash"></i>';
-
     newli.textContent = input.value;
     notCompleted.appendChild(newli);
     newli.appendChild(checkbtn);
