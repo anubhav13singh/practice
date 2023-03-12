@@ -21,8 +21,7 @@ import axios from 'axios';
       return (
         <div>       
              <h2>hii mr. {number}  </h2>
-            {/* props .number */}
-
+            {/* /* props .number */ }
                <ul>
               {list.map(l =>(
                 <li key={l}>{l}</li>

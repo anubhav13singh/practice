@@ -6,7 +6,6 @@ import {useState} from 'react'
 import React from 'react';
 
 
-
 function SuperHero(){
   const [hero, setHero] = useState(["superman", "spiderman", "thor"])
 
@@ -62,7 +61,9 @@ function Increment(){
 
 function App() {
  
-  let array = ["hitesh","ryan","john"]
+  let array = ["hitesh","ryan","john"];
+
+
 
   return (
     <div className='App-header'>
@@ -81,6 +82,7 @@ function App() {
 
        <SuperHero/>
 
+    
       
       
      </div> 
