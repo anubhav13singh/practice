@@ -1,6 +1,5 @@
 import React, { useState, useContext, createContext } from 'react';
 import Hero from './context api/Hero';
-import Navbar from './context api/Navbar';
 import Usecard from './context api/Usecard';
 
 
@@ -20,7 +19,6 @@ function Context() {
   return (
     <myContext.Provider value = {{name , color}}>
     
-    <Navbar/>
 
       <form>
         <input type={"text"}

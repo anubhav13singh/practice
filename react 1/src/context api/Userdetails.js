@@ -4,8 +4,9 @@ import { myContext } from '../Context'
 const Userdetails = () => {
     const data = useContext(myContext)
   return (
-    <div>
-        my name is {data.name};
+    <div  style={{color: data.color}}>
+        my name is {data.name };
+        
     </div>
   )
 }

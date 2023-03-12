@@ -1,11 +1,9 @@
 import React from 'react'
-import Button from './Button'
 import Userdetails from './Userdetails'
-
+import Button from './Button'
 function Usecard() {
   return (
     <div>
-        
         <Button/>
         <Userdetails/>
     </div>
