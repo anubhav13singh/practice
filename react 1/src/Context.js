@@ -1,4 +1,4 @@
-import React, { useState, useContext, createContext } from 'react';
+import React, { useState, createContext } from 'react';
 import Hero from './context api/Hero';
 import Usecard from './context api/Usecard';
 

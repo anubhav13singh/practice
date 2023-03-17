@@ -13,6 +13,7 @@ function App() {
 
   return (
     <div>
+      <div>{count}</div>
       <input type={"number"} value={input}
        onChange={(e) => setInput(e.target.value)}></input>
     
@@ -21,6 +22,10 @@ function App() {
     </button>
     <button onClick={() => dispatch( increment())}>
         incerement by 1
+    </button>
+    
+    <button onClick={() => dispatch( decrementg())}>
+    decrement by 1
     </button>
     </div>
   )
