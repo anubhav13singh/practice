@@ -31,9 +31,10 @@ function App() {
         </Route>
           
           <Route path ='/User' element = {<User/>}>
-          <Route path ='/User/:UserId' element = {<UserDetails/>}/>
-          <Route path='/User/Admin' element={<Admin/>}/>
+          <Route path ='/:UserId' element = {<UserDetails/>}/>
+          <Route path='/Admin' element={<Admin/>}/>
           </Route>
+          {/* Dynamic route dobut */}
           {/* <Route path ='/User/2' element = {<UserDetails/>}/>
           <Route path ='/User/3' element = {<UserDetails/>}/> */}
 

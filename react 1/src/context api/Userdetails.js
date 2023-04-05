@@ -11,4 +11,4 @@ const Userdetails = () => {
   )
 }
 
-export default Userdetails
+export default Userdetails;
