@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container{
+               background-color: aquamarine; height: 500px;width: 500px;
+               display: grid;
+               grid-template-columns: repeat(3 , 1fr);
+               /* grid-template-rows: 100px 50px 100px; */
+               /* row-gap: 10px; */
+               /* column-gap: 15px; */
+        }
+        /* FR:1 is fraction of entire width */
+        .item{
+            /* height: 90px; */
+            /* width: 90px; */
+            border: 2px solid burlywood;
+            background-color: darkslategrey;
+       }
+       #box{
+       grid-row-start: 1;
+       grid-row-end: 4;
+       }
+       
+    </style>
+</head>
+<body>
+ <div class="container">
+    <div class="item"  id="box"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div> 
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div> 
+     <div class="item"></div>
+    <div class="item"></div>
+  
+ </div>   
+</body>
+</html>

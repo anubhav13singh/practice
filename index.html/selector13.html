@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- excelidraw website use it -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!-- pseudo selector is nothing but inject within the  label the element before and after  -->
+</head>
+<style>
+    .imp-label::before{
+        content: '';
+        display: block;
+        background-color: aqua;
+        width: 30px;
+        height: 20px;
+        border-radius: 10px;
+
+    }
+    .important::after{
+        content: 'netflix';
+        display:inline ;
+        background-color: aqua;
+        width: 30px;
+        height: 20px;
+        border-radius: 10px;
+    } 
+    .important:hover{
+    background-color: bisque;
+    padding: 20px; 
+  } 
+  .btn {
+    background-color: blueviolet;
+   color: rgb(142, 145, 145);
+    padding: 8px 15px 5px 14px;
+    border: 1px solid red;
+    border-radius: 50px;
+  }
+  .btn:hover{
+   background-color: aqua;
+   color: red;
+   border: 1px dashed blue;
+  }
+ input:focus{
+  color: bisque;
+  background-color: darkgray;
+  
+ }
+      /* hw- increse the size of the box,font size when cliked  */
+      a:visited{
+background-color: antiquewhite;
+      }
+      a:active{
+        color: greenyellow;
+      }
+      /* detail study aBOUT THE HOVER CONDITION and all is state */
+      a:link{
+        color: aquamarine;
+      
+      }
+      li:nth-child(even){
+background-color: aqua;
+      }
+      li{
+        list-style-type: lower-alpha;
+      }
+     
+</style>
+<body>
+    <!-- 
+        learn different type of selector -->
+       <!-- <pre>pseudo selector
+        before pseudo selector and after pseudo selector
+        dobut -->
+        <!-- use content:'';
+        then it ll work
+        button :: before /after </pre> --> 
+        <!-- learn code online for article writing blouqe -->
+        <!-- hash node   iwrite code -->
+        <form action="">
+            <label class="imp-label" for="name">name</label>
+            <input type="text" name="name">
+            <label  class="important" for="email">email</label>
+          <input type="text" name="email">
+          <input class="btn" type="button" value="clik me">
+         
+
+        </form>
+        <p>Lorem ipsum dolor sit  veritatis aliquam necessitatibus,</p>
+        name;
+        <input type="text"><br>
+        <a href="www.google.com"> google</a>
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+        </ul>
+        
+</body>
+</html>

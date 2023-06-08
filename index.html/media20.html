@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <style>
+        body{
+            display: flex;
+        }
+        .box{
+           width: 70px;
+           height: 70px;
+           margin: 10px;border: 1px solid red;
+           text-align: center;padding: 10px;
+        }
+        @media(max-width:500px){
+            body{
+             flex-direction: column;
+                background-color: aqua;
+            }
+            .box{
+                background-color: antiquewhite;
+            }
+        }
+        @media(min-width:500px) and (max-width:700px){
+            body{
+                flex-direction: column-reverse;
+                background-color: bisque;
+                align-items: center;
+            }
+            .box{
+                border: 7px solid red;
+                border-radius: 50%;
+            }
+        }
+            @media(min-width:700px){
+                body{
+                    background-color: darkcyan;
+                }
+            }
+            </style>
+</head>
+<body>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+</body>
+</html>

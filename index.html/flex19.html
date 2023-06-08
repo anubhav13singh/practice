@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <!-- flexfroggy play to learn flex -->
+    <style>
+        .container{
+            display: flex;
+            height: 300px;
+            border: 1px solid slategray;
+            /* flex-direction: row-reverse; */
+            /* justify-content: center; */
+            /* justify works horizontally */
+            /* read all the content  */
+            /* align-items: center; */
+            flex-wrap: wrap;
+            /* gap: 90px; */
+        }
+        .item{
+            border: 2px solid red;
+            background-color: darkgreen;
+            margin: 8px;height: 50px;width: 60px;
+        }
+        #flex{
+            /* flex-grow: 3; */
+            align-self: center;
+            /* align works virtically */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">one</div>
+        <div class="item">two</div>
+        <div class="item" id="flex">three</div>
+        <div class="item">four</div>
+    </div>
+</body>
+</html>
